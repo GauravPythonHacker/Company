@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Beautiful Website</title>
+<style>
+  /* Your existing CSS code */
+  /* Additions for improved design */
+  body {
+    font-family: Arial, sans-serif;
+    background: black;
+    line-height: 1.6;
+  }
+
+  
+ .container{ 
+  
+    max-width: 100%;
+    margin: 0px auto;
+    padding: 20px;
+    justify-content: center;
+  }
+  .about{
+  	margin-bottom: 20px;
+  }
+.about-container{
+	width: 100%;
+	margin: 50px auto;
+	border-radius: 10px;
+	padding: 0px;
+	background: rgb(235 235 235);
+	box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.services{
+	margin-bottom: 20px;
+}
+.services li{
+	font-size: 1.197rem;
+}
+.services-container{
+	width: 100%;
+	border-radius: 10px;
+	padding: 0px;
+	background: rgb(235 235 235);
+	box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1)
+}
+  h1 {
+    color: #333333;
+    font-size: 4.5rem;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 30px;
+  }
+
+  h2 {
+    color: #FF864F;
+    font-size: 2.8rem;
+    font-weight: 500;
+  }
+
+  h3 {
+    font-size: 2.2rem;
+    font-weight: 400;
+    color: #ffffff;
+   
+    padding: 10px;
+    border-radius: 5px;
+  }
+
+  p {
+    color: #999;
+    font-weight: 300;
+    font-size: 1.6rem;
+    line-height: 1.8;
+  }
+
+  /* Navigation styles */
+  .navbar {
+    top: 0;
+    position: sticky;
+    width: 100%;
+    padding: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    transition: background-color 0.3s; /* Added transition effect */
+  }
+
+  .navbar.scrolled {
+    background-color: black; /* Changed to black when scrolled */
+  }
+
+  .logo {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #ffffff;
+    text-transform: uppercase;
+    margin-left: 20px;
+  }
+
+  .navbar ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+  }
+
+  .navbar li {
+    margin-left: 30px;
+  }
+
+  .navbar a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.2rem;
+  position:relative;
+  z-index: 1;
+  transition:transform0.3s;
+          }
+  
+.navbar a:hover {
+    color: purple;
+    }
+  
+  .logoimg{
+    width: 40%;
+	margin-top: 10px;
+	margin-bottom: 0px;
+    border-radius: 5px;
+  }
+  .upperimg{
+  	width: 100%
+  }
+  .header {
+      position: relative;
+      margin-top: 0px;
+      text-align: center;
+      padding: 100px 0;
+      background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('bg.jpg') center/cover no-repeat;
+      animation: sparkling 10s linear infinite;
+  }
+  .header h1{
+  	text-shadow: 0 0 10px rgba(241, 196, 15, 0.8);
+  	
+  }
+  @keyframes sparkling {
+  0%, 100% {
+  background-position: 0 0;
+  }
+  50% {
+  background-position: 100% 100%;
+  }
+  }
+  
+  .cta-button {
+      display: inline-block;
+      padding: 10px 20px;
+      background-color: #f39c12;
+      color: #fff;
+      font-size: 20px;
+      text-decoration: none;
+      border-radius: 4px;
+      margin-top: 20px;
+      box-shadow: 0 0 10px rgba(243, 156, 18, 0.8);
+      animation: glowing 2s ease-in-out infinite;
+  }
+  
+  @keyframes glowing {
+      0%, 100% { box-shadow: 0 0 10px rgba(243, 156, 18, 0.8); }
+      50% { box-shadow: 0 0 20px rgba(243, 156, 18, 1); }
+  }
+  footer {
+  background: #111;
+  padding-top: 40px;
+  color: #fff;
+  clear: both;
+  }
+  
+  .footer-content {
+  text-align: center;
+  }
+  
+  .footer-content h3 {
+  font-size: 1.2rem;
+  font-weight: 400;
+  text-transform: capitalize;
+  line-height: 3rem;
+  }
+  
+  .footer-bottom p {
+  max-width: 500px;
+  float: center;
+  margin: 10px auto;
+  line-height: 28px;
+  font-size: 17px;
+  }
+  
+</style>
+</head>
+<body>
+<nav id="navbar" class="navbar">
+  	
+    <div class="logo"><a href ="#"><img src= "logo.jpg" class = "logoimg"></a></div>
+    <ul>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#services">Services</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+<div class="container">
+  
+  <section id = "home">
+  
+    <div class = "header">
+		<h1> Welcome To World Of Designs </h1>
+      <button  class="cta-button" id= "hireButton">Hire Us </button>>
+	</div>
+</section>
+
+<section id = "services">
+
+    <div class="services">
+    	<div class="services-container">
+      <h2>Services We Offer:</h2>
+      <ul>
+        <li>Website Development:
+        Our expert team of web developers crafts custom websites tailored to your specific needs. Whether you require a simple informational website or a complex e-commerce platform, we've got you covered. We focus on responsive design, user-friendly interfaces, and cutting-edge technologies to deliver a seamless browsing experience.</li>
+        <p> </p>
+        <li>Mobile App Development:
+        Transform your ideas into reality with our top-notch mobile app development services. From iOS to Android and cross-platform applications, we utilize the latest tools and frameworks to create apps that captivate users and add value to your business.</li>
+        <p> </p>
+        <li>Consultation and Strategy:
+        We work closely with you to understand your business objectives and craft a digital strategy that aligns with your vision. Our experienced consultants provide valuable insights and recommendations to help you achieve your goals.</li>
+      </ul>
+      	</div>
+    </div>
+   </section> 
+   
+  <section id = "about">
+  
+<div class="about">
+	<div class="about-container">
+  <h2>About Us</h2>
+  <p>Welcome to Bhardwaj Bros!
+  
+  At Bhardwaj Bros, we pride ourselves on being a dynamic and innovative company dedicated to providing top-quality products and exceptional services. With a legacy spanning several decades, we have earned a reputation as a trusted name in the industry.     
+  
+  Whether you are a long-time partner or a new customer, we welcome you to explore our extensive range of products and services. Join us in our journey as we build a better future together.
+  
+  Thank you for choosing Bhardwaj Bros. Your success is our success!</p>
+</div>
+</div>
+
+</section>
+
+<section id = "contact">
+
+    <div class="contact">
+      <h2>Contact Us</h2>
+      <p>Email: gauravsingh000717171@gmail.com</p>
+      <p>Phone: 707-036-7621</p>
+    </div>
+  </div>
+</section>
+
+
+	<footer>
+		<div class="footer-content">
+			<h3>Bhardwaj Bros</h3>
+				<ul class="socials">
+						
+						<a href=""> <i class = "fa-brands fa-facebook"></i></a> 
+						<a href="https://instagram.com/pawansriiiii?igshid=NTc4MTIwNjQ2YQ=="> <i class = "fa-brands fa-instagram"></i></a>
+						<a href="https://youtube.com/@PawanSri711"> <i class = "fa-brands fa-youtube"></i></a>		
+												
+				</ul>
+		</div>
+		<div class="footer-bottom">
+			<p> Copyright &copy;2023 BhardwajBros Designed By <span>Gaurav Bhardwaj</span></p>
+		
+		</div>
+	</footer>
+	
+
+
+
+
+  <script>
+    // JavaScript code to add the scrolling effect to the navbar
+    const navbar = document.getElementById('navbar');
+
+    window.addEventListener('scroll', () => {
+      if (window.scrollY > 0) {
+        navbar.classList.add('scrolled');
+      } else {
+        navbar.classList.remove('scrolled');
+      }
+    });
+   
+  </script>
+</body>
+</html>
